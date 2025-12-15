@@ -1,10 +1,10 @@
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import  { AuthContext } from "../../contexts/AuthContext";
 import { useContext, useEffect } from "react";
-
+import logoImg from "../../assets/logogesrest.png";
 
 export default function RootLayout() {
-    const logoImg = "/src/assets/logogesrest.png";
+    
     const {logout, user} = useContext(AuthContext);
     const navigate = useNavigate();
 
