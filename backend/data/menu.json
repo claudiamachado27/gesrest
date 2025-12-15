@@ -1,0 +1,101 @@
+[
+  {
+    "id": "e1",
+    "name": "Edamame",
+    "category": "Entrada",
+    "price": 3.8,
+    "description": "Vagens de soja cozidas no vapor, levemente salpicadas com flor de sal.",
+    "image": {
+      "src": "edamame.webp",
+      "alt": "Vagens de soja Edamame."
+    }
+  },
+  {
+    "id": "e2",
+    "name": "Gyoza de Frango",
+    "category": "Entrada",
+    "price": 5.5,
+    "description": "5 unidades de raviolis japoneses recheados com frango e vegetais, fritos ou cozidos no vapor.",
+    "image": {
+      "src": "gyosa-de-frango.webp",
+      "alt": "Gyoza de frango."
+    }
+  },
+  {
+    "id": "e3",
+    "name": "Sopa Miso",
+    "category": "Entrada",
+    "price": 3.5,
+    "description": "Caldo tradicional japonês com pasta de soja Miso, tofu, alga wakame e cebolinho.",
+    "image": {
+      "src": "sopa-miso.webp",
+      "alt": "Sopa Miso tradicional."
+    }
+  },
+  {
+    "id": "p1",
+    "name": "Combinado Tokujo (18 peças)",
+    "category": "Prato Principal",
+    "price": 22,
+    "description": "Seleção premium do chef: 6 Sashimi, 4 Nigiri e 8 Uramaki. Peixes frescos do dia.",
+    "image": {
+      "src": "combinado-tokujo.webp",
+      "alt": "Combinado de Sushi e Sashimi."
+    }
+  },
+  {
+    "id": "p2",
+    "name": "Tuna Tataki",
+    "category": "Prato Principal",
+    "price": 19.5,
+    "description": "Atum braseado e selado, servido fatiado com molho Ponzu, sésamo e cebolinho.",
+    "image": {
+      "src": "tuna-tataki.webp",
+      "alt": "Tuna Tataki braseado."
+    }
+  },
+  {
+    "id": "p3",
+    "name": "Tempura de Camarão e Vegetais",
+    "category": "Prato Principal",
+    "price": 16,
+    "description": "Camarões e legumes diversos fritos em polme leve e crocante, acompanhados de molho Tentsuyu.",
+    "image": {
+      "src": "tempura-camarao-vegetais.webp",
+      "alt": "Tempura de camarão e vegetais."
+    }
+  },
+  {
+    "id": "s1",
+    "name": "Mochi Ice Cream",
+    "category": "Sobremesa",
+    "price": 5,
+    "description": "Doce de arroz japonês (Mochi) recheado com gelado de baunilha e chá verde. 2 unidades.",
+    "image": {
+      "src": "mochi-ice-cream.webp",
+      "alt": "Mochi Ice Cream."
+    }
+  },
+  {
+    "id": "s2",
+    "name": "Cheesecake de Sésamo Preto",
+    "category": "Sobremesa",
+    "price": 4.8,
+    "description": "Cheesecake cremoso com o sabor intenso e exótico do sésamo preto.",
+    "image": {
+      "src": "cheesecake-sesamo-preto.webp",
+      "alt": "Fatia de cheesecake de sésamo preto."
+    }
+  },
+  {
+    "id": "s3",
+    "name": "Anko Dango",
+    "category": "Sobremesa",
+    "price": 4,
+    "description": "Bolinhos de arroz japoneses espetados, cobertos com doce de feijão Azuki (Anko).",
+    "image": {
+      "src": "anko-Dango.webp",
+      "alt": "Espetada de Anko Dango."
+    }
+  }
+]

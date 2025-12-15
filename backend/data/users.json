@@ -1,0 +1,26 @@
+[
+  {
+    "email": "utilizador@gusronk.com",
+    "password": "123",
+    "firstName": "John",
+    "lastName": "Doe",
+    "role": "utilizador",
+    "termsAccepted": true
+  },
+  {
+    "email": "gerente@gusronk.com",
+    "password": "123",
+    "firstName": "Paula",
+    "lastName": "Doe",
+    "role": "gerente",
+    "termsAccepted": true
+  },
+  {
+    "email": "cozinha@gusronk.com",
+    "password": "123",
+    "firstName": "Don",
+    "lastName": "Ruan",
+    "role": "cozinha",
+    "termsAccepted": true
+  }
+]

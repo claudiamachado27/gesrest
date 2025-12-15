@@ -1,0 +1,150 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --color-verde-escuro: #4E5C2F;
+  --color-castanho: #B39360;     
+  --color-verde-claro: #5C743C; 
+
+  --text-color-dark: #333333;
+  --text-color-light: #ffffff;
+  --background-color-light: #f8f8f8;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+form {
+    width: 100%;
+    max-width: 40rem;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: linear-gradient(180deg, var(--color-verde-claro), var(--color-verde-escuro));
+    border-radius: 8px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.control-row {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.control,
+fieldset {
+    margin-bottom: 1rem;
+}
+
+.control.no-margin {
+    margin-bottom: 0;
+}
+
+.control label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+    color: var(--background-color-light);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+}
+
+.control input {
+    display: block;
+    width: 100%;
+    max-width: auto;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #758a8a;
+    background-color: #fffcc8;;
+    color:var(--text-color-dark);
+}
+
+.control select{
+    display: block;
+    width: 100%;
+    max-width: 15rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #758a8a;
+    background-color: #fffcc8;;
+    color: #142020;
+}
+
+.control select.form-control::after {
+    content: '\25BC'; 
+    font-size: 10px;
+    color: #333;
+    position: absolute; /* Posicionamento absoluto dentro do div.control */
+    top: 50%; 
+    right: 10px; 
+    pointer-events: none; /* Garante que o ícone não interfere com o clique no select */
+    transform: translateY(-50%);
+}
+.control:has(input[type="checkbox"]) {
+    display: flex;
+    align-items: center;
+}
+
+.control:has(input[type="checkbox"]) label {
+    margin: 0;
+}
+
+.control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    max-width: none;
+    margin-right: 0.5rem;
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    color: #d9e2f1;
+}
+
+.control textarea{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #758a8a;
+    background-color: #fffcc8;;
+    color: #142020;
+}
+
+.control-error {
+    color: #ffca99;
+    font-size: 0.8rem;
+    height: 2rem;
+    padding: 0.5rem 0;
+}
+
+.control-error p {
+    margin: 0;
+}
+
+.control-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+
+
+.terms{
+    font-size: 0.7rem !important;
+     text-transform: none !important;
+
+}

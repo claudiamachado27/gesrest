@@ -1,0 +1,46 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --color-verde-escuro: #4E5C2F; /* Verde escuro do "GESREST" */
+  --color-castanho: #B39360;     /* castanho claro do "Gestão de Restaurantes" */
+  --color-verde-claro: #5C743C; /* Um verde um pouco mais claro */
+
+  --text-color-dark: #333333;
+  --text-color-light: #ffffff;
+  --background-color-light: #f8f8f8;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+button {
+    border-radius: 5px !important;
+    border: 1px solid transparent;
+    color: var(--background-color-light);
+    padding: 0.6em 2.5em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: var(--color-castanho);
+    cursor: pointer;
+    transition: border-color 0.25s;
+    margin:20px;
+    
+}
+
+button:hover{
+    background-color: var(--background-color-light);
+    border-color: var(--color-castanho);
+    color: var(--color-verde-escuro);
+    
+}
+
+
+/* .button-color{
+    background-color: #dc2ad3;
+} */

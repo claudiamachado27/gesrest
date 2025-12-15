@@ -1,0 +1,90 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --color-verde-escuro: #4E5C2F; /* Verde escuro do "GESREST" */
+  --color-castanho: #B39360;     /* Castanho claro do "Gestão de Restaurantes" */
+  --color-verde-claro: #5C743C; /* Verde um pouco mais claro */
+
+  --text-color-dark: #333333;
+  --text-color-light: #ffffff;
+  --background-color-light: #f8f8f8;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--text-color-dark) !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--color-verde-escuro);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Estilos base para AMBOS os botões */
+.btn-entrar,
+.btn-registar {
+  display: inline-block; 
+  padding: 8px 15px; 
+  font-size: 1rem;
+  font-weight: 600; 
+  text-align: center;
+  text-decoration: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+}
+
+/* Estilo para o Botão "Entrar" (Outline) */
+.btn-entrar {
+  color: var(--color-verde-escuro); 
+  background-color: transparent; 
+  border: 2px solid var(--color-verde-escuro);
+}
+
+.btn-entrar:hover {
+  background-color: var(--color-verde-claro);
+  color: var(--background-color-light) !important;
+
+}
+
+.btn-registar{
+  color: var(--background-color-light) !important;
+  background-color: var(--color-verde-escuro);
+}
+
+.btn-registar:hover {
+  background-color: var(--color-verde-claro);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    z-index: 1000;
+    background-color: var(--color-castanho);
+}
+

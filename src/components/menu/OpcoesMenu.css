@@ -1,0 +1,398 @@
+.image-container {
+  position: relative; 
+  overflow: hidden; /* Garante que nada saia do contentor */
+}
+
+.card-menu {
+  border: none;
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+  display: flex; /* Adicionado para card-body flex */
+  flex-direction: column; /* Conteúdo em coluna */
+  height: 100%; /* Para que todos os cards tenham a mesma altura */
+}
+
+.card-menu .card-img {
+    width: 100%;
+    height: 250px; 
+    object-fit: fit;  
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-menu .card-body {
+    padding: 15px; 
+    flex-grow: 2; /* Faz o corpo expandir */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empurra o botão para baixo */
+}
+
+/* Info das categorias */
+.badge-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    color: white;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    z-index: 10;
+}
+
+
+/* Coluna Pratos Selecionados */
+
+.sidebar-title{
+  background-color: #B39360;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.prato-sidebar {
+    background-color: #fff; 
+    padding: 0;
+    border-radius: 8px; 
+    border: 1px solid #758a8a;
+    overflow: hidden; /* Para que o arredondamento seja visível */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+
+}
+
+.prato-header {
+    background-color: #B39360;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Container do item da sidebar */
+.prato-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+/* Container da imagem */
+.prato-item .image {
+    /* Define o tamanho fixo para o container da imagem */
+    width: 60px; /* Largura reduzida */
+    height: 60px; /* Altura reduzida */
+    overflow: hidden; /* Garante que a imagem não saia do container */
+    border-radius: 4px;
+    flex-shrink: 0; /* Impede que o flexbox encolha este bloco */
+}
+
+/* Imagem dentro do item da sidebar */
+.prato-img-sm {
+    /* Faz a imagem preencher o container */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta a imagem para caber sem distorcer */
+}
+
+/* Informações do prato na sidebar */
+.prato-item .prato-info {
+    /* Ajuste de margem ou padding se necessário */
+    padding-left: 5px;
+}
+
+/* Título e descrição menores na sidebar */
+.prato-item .prato-info p {
+    font-size: 0.85rem !important; /* Tamanho da fonte menor */
+    line-height: 1.2;
+}
+
+.prato-item .prato-info .fw-bold {
+    font-size: 0.95rem !important; /* Título um pouco maior */
+}
+
+/* .prato-sidebar .prato-item .image .prato-img {
+    width: 80px;   
+    height: auto;  
+     border-radius: 8px; 
+}
+
+.prato-sidebar .prato-item .image {
+     padding-left: 15px; 
+}
+
+
+.prato-sidebar .prato-item .prato-info .fs-3 {
+    font-size: 1rem !important; 
+}
+
+.prato-sidebar .prato-item .prato-info .card-text {
+    font-size: 0.9rem !important; 
+    line-height: 16px;
+} */
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+header {
+  text-align: center;
+}
+
+header img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.4));
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+header p {
+  margin: 0 auto;
+  font-size: 1.15rem;
+  max-width: 38ch;
+  color: #9eb5b4;
+}
+
+.menu-category {
+  max-width: 85rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 2px solid #0d373e;
+  border-radius: 8px;
+}
+
+.menu-category h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  color: #8feeff;
+  text-align: center;
+}
+
+.fallback-text {
+  text-align: center;
+}
+
+.menu {
+  max-width: 80rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-gap: 2rem;
+  margin: 2rem auto;
+  padding: 0;
+  list-style: none;
+}
+
+.prato-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background: #1f1c2c;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  animation: slide-up-fade-in 0.3s ease-out forwards;
+}
+
+.prato-item button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.prato-item:nth-child(odd) button:hover,
+.prato-item:nth-child(odd) button:focus {
+  box-shadow: 0 0 8px 4px rgba(255, 217, 0, 0.6);
+  border-radius: 8px;
+  transform: rotate(5deg);
+}
+
+.prato-item:nth-child(even) button:hover,
+.prato-item:nth-child(even) button:focus {
+  box-shadow: 0 0 8px 4px rgba(255, 217, 0, 0.6);
+  border-radius: 8px;
+  transform: rotate(-5deg);
+}
+
+.prato-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.prato-item-content {
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  background-color: #141413;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  text-align: left;
+  color: #c5c3c3;
+}
+
+.prato-item-content h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.prato-item-content p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.prato-item-valor {
+  font-weight: bold;
+  color: #8feeff;
+}
+
+#delete-confirmation {
+  padding: 1rem;
+}
+
+#delete-confirmation h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  color: #5d0909;
+}
+
+#delete-confirmation p {
+  margin: 0 auto;
+  font-size: 1.15rem;
+  max-width: 38ch;
+  color: #804242;
+}
+
+#confirmation-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.button {
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #29d297;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  color: #0f0f0f;
+  font-weight: bold;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #29d297ba;
+}
+
+.button-text {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  color: #5d0909;
+}
+
+.modal::backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+  min-width: 30rem;
+  ;
+  padding: 0;
+  z-index: 2;
+  background: #d5c7bc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  animation: slide-down-fade-in 0.3s ease-out forwards;
+}
+
+.center {
+  text-align: center;
+}
+
+.error {
+  max-width: 40rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #f4c7c7;
+  color: #3e0505;
+}
+
+.modal .error {
+  margin: auto;
+}
+
+@keyframes slide-down-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}  */

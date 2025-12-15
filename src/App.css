@@ -1,0 +1,90 @@
+#root {
+  padding: 2rem;
+  text-align: center; 
+
+  --color-verde-escuro: #4E5C2F; /* Verde escuro do "GESREST" */
+  --color-castanho: #B39360;     /* castanho claro do "Gestão de Restaurantes" */
+  --color-verde-claro: #5C743C; /* Um verde um pouco mais claro */
+
+  --text-color-dark: #333333;
+  --text-color-light: #ffffff;
+  --background-color-light: #f8f8f8;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+
+
+/* =========================================
+   SEÇÃO PRINCIPAL (.cards)
+   ========================================= */
+.cards {
+    padding: 60px 0; /* Espaço vertical da seção */
+    background-color: transparent; /* Fundo transparente/branco */
+    text-align: center; /* Centraliza o título H2 */
+}
+
+.cards h1 {
+    font-size: 2rem;
+    color: #343a40; /* Cinza escuro para o título */
+    margin-bottom: 40px; /* Espaço entre o título e os cards */
+    font-weight: 700;
+}
+
+/* =========================================
+   ITEM DO CARD (.card-item)
+   ========================================= */
+.card-item {
+    background-color: var(--text-color-light);
+    padding: 60px 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    height: 100%; 
+    text-align: center; 
+}
+
+/* Efeito ao passar o mouse */
+.card-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15); 
+}
+
+/* =========================================
+   CONTEÚDO DO CARD
+   ========================================= */
+
+/* Imagem  */
+.card-item img {
+    max-width: 100px; 
+    height: auto;
+    margin-bottom: 20px; 
+    display: inline-block;   
+}
+
+/* Título do Serviço (H3) */
+.card-item h3 {
+    font-size: 1.5rem;
+    color: var(--color-verde-escuro); 
+    margin-bottom: 20px; 
+    font-weight: 600;
+}
+
+/* Descrição (P) */
+.card-item p {
+    font-size: 1rem;
+    color: #6c757d; 
+    line-height: 1.6; 
+    margin-bottom: 0; 
+}
+
+/* Links dentro do card (remover sublinhado) */
+.card-item a {
+    text-decoration: none;
+    color: inherit;
+}
