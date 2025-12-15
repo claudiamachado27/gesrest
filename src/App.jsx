@@ -1,5 +1,5 @@
 import './App.css'
-import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import {createHashRouter, RouterProvider} from 'react-router-dom'
 import { AuthProvider } from './contexts/AuthContext';
 import RootLayout from './components/layouts/RootLayout';
 import ErrorPage from './pages/Error.jsx';
@@ -17,7 +17,7 @@ import ControleCozinha from './pages/ControleCozinha.jsx';
 
 
 // Esta função recebe um array de objetos, onde cada objeto define uma rota
-const router = createBrowserRouter ([
+const router = createHashRouter ([
   {path:'/',
   element: <RootLayout/>,
   errorElement: <ErrorPage/>,
