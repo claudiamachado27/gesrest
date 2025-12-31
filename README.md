@@ -53,7 +53,7 @@ O objetivo principal foi desenvolver uma solução funcional que atendesse a tr�
 * **React.js:** Biblioteca principal para construção da interface.
 * **Vite:** Ferramenta de build de última geração para um desenvolvimento rápido.
 * **React Router Dom:** Gerenciamento de rotas e proteção de acessos.
-* **CSS3 / Styled Components:** (Ajuste se usou outra lib) Estilização avançada e layout de Dashboard.
+* **CSS3 / Styled Components:** Estilização avançada e layout de Dashboard.
 * **JavaScript (ES6+):** Lógica de negócios e manipulação de dados.
 * **Git & GitHub:** Versionamento e deploy.
 
