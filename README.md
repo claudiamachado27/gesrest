@@ -4,13 +4,8 @@ Este projeto foi desenvolvido no contexto do curso de **Front-end**. O **GesRest
 
 🔗 **Acesse o projeto aqui:** [GesRest Live](https://claudiamachado27.github.io/gesrest/#/)
 
-Para aceder a cada área do GesRest utilize:
-
-email: utilizador@gusronk.com e password: 123
-
-email: gerente@gusronk.com e password: 123
-
-email: cozinha@gusronk.com e password: 123
+## ⚠️ Observação Técnica
+Atualmente, as funcionalidades de login e integração com o backend estão desabilitadas na versão de demonstração (GitHub Pages), pois dependem de um servidor local (API). Estou trabalhando na implementação de um **Mock Service** para permitir a experiência completa online.
 
 
 🔗 **Veja mais detalhes em:** [Processo de Design e Desenvolvimento](https://portfolio.claudiamachado.me/projeto-gesrest)
